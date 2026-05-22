@@ -1,0 +1,40 @@
+{
+  "categories": [
+    {
+      "slug": "custom-pins",
+      "name": { "zh": "襟章", "en": "Custom Pins" },
+      "description": { "zh": "軟琺瑯章、硬琺瑯章、木章、亞克力章等多種款式", "en": "Soft enamel, hard enamel, wooden, acrylic pins and more" },
+      "image": "/images/categories/pins.jpg"
+    },
+    {
+      "slug": "custom-keychains",
+      "name": { "zh": "匙扣", "en": "Keychains" },
+      "description": { "zh": "金屬匙扣、亞克力匙扣、木匙扣等多種材質", "en": "Metal, acrylic, wooden keychains and more" },
+      "image": "/images/categories/keychains.jpg"
+    },
+    {
+      "slug": "medals-coins",
+      "name": { "zh": "獎牌/紀念幣", "en": "Medals & Coins" },
+      "description": { "zh": "客製化獎牌及紀念幣", "en": "Custom medals and challenge coins" },
+      "image": "/images/categories/medals.jpg"
+    },
+    {
+      "slug": "custom-clothing-labels",
+      "name": { "zh": "服裝標籤", "en": "Clothing Labels" },
+      "description": { "zh": "織嘜、印製標籤、棉標等", "en": "Woven labels, printed labels, cotton labels and more" },
+      "image": "/images/categories/labels.jpg"
+    },
+    {
+      "slug": "lanyards",
+      "name": { "zh": "頸繩/掛頸帶", "en": "Lanyards" },
+      "description": { "zh": "滌綸、发热转印、圆筒形頸繩", "en": "Polyester, dye-sublimation, tubular lanyards" },
+      "image": "/images/categories/lanyards.jpg"
+    },
+    {
+      "slug": "others",
+      "name": { "zh": "其他產品", "en": "More Products" },
+      "description": { "zh": "和纸胶带、口罩套、姓名贴等", "en": "Washi tape, mask cases, name labels and more" },
+      "image": "/images/categories/others.jpg"
+    }
+  ]
+}

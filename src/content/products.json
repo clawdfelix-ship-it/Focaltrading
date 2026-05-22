@@ -1,0 +1,436 @@
+{
+  "products": [
+    {
+      "slug": "soft-enamel-pins",
+      "name": {
+        "zh": "軟琺瑯徽章",
+        "en": "Soft Enamel Pins"
+      },
+      "category": "custom-pins",
+      "description": {
+        "zh": "軟琺瑯工藝徽章，色彩鮮豔光亮，觸感溫潤。",
+        "en": "Soft enamel pins with vivid colors and smooth texture."
+      },
+      "images": [
+        "/images/products/soft-enamel-pins/1.jpg"
+      ],
+      "priceRange": {
+        "zh": "每個 HK$3-8",
+        "en": "HK$3-8 per pc"
+      },
+      "minOrder": {
+        "zh": "100個起",
+        "en": "100 pcs min"
+      },
+      "specs": {
+        "zh": "尺寸: 25-80mm",
+        "en": "Size: 25-80mm"
+      }
+    },
+    {
+      "slug": "hard-enamel-pins",
+      "name": {
+        "zh": "硬琺瑯徽章",
+        "en": "Hard Enamel Pins"
+      },
+      "category": "custom-pins",
+      "description": {
+        "zh": "硬琺瑯工藝徽章，表面平滑如鏡，質感高級。",
+        "en": "Hard enamel pins with mirror-like smooth surface and premium feel."
+      },
+      "images": [
+        "/images/products/hard-enamel-pins/1.jpg"
+      ],
+      "priceRange": {
+        "zh": "每個 HK$5-12",
+        "en": "HK$5-12 per pc"
+      },
+      "minOrder": {
+        "zh": "100個起",
+        "en": "100 pcs min"
+      },
+      "specs": {
+        "zh": "尺寸: 25-80mm",
+        "en": "Size: 25-80mm"
+      }
+    },
+    {
+      "slug": "acrylic-keychains",
+      "name": {
+        "zh": "亞克力匙扣",
+        "en": "Acrylic Keychains"
+      },
+      "category": "custom-keychains",
+      "description": {
+        "zh": "透明亞克力匙扣，可加雷射切割形狀。",
+        "en": "Clear acrylic keychains with laser-cut shapes."
+      },
+      "images": [
+        "/images/products/acrylic-keychains/1.jpg"
+      ],
+      "priceRange": {
+        "zh": "每個 HK$2-5",
+        "en": "HK$2-5 per pc"
+      },
+      "minOrder": {
+        "zh": "100個起",
+        "en": "100 pcs min"
+      },
+      "specs": {
+        "zh": "尺寸: 30-70mm",
+        "en": "Size: 30-70mm"
+      }
+    },
+    {
+      "slug": "acrylic-pins",
+      "name": {
+        "zh": "亞克力胸針",
+        "en": "Acrylic Pins"
+      },
+      "category": "custom-pins",
+      "description": {
+        "zh": "透明亞克力胸針，時尚美觀。",
+        "en": "Transparent acrylic pins, stylish."
+      },
+      "images": [
+        "/images/products/acrylic-pins/1.jpg"
+      ],
+      "priceRange": {
+        "zh": "每個 HK$2-6",
+        "en": "HK$2-6 per pc"
+      },
+      "minOrder": {
+        "zh": "100個起",
+        "en": "100 pcs min"
+      },
+      "specs": {
+        "zh": "尺寸: 25-70mm",
+        "en": "Size: 25-70mm"
+      }
+    },
+    {
+      "slug": "metal-medal",
+      "name": {
+        "zh": "金屬獎牌",
+        "en": "Metal Medal"
+      },
+      "category": "medals-coins",
+      "description": {
+        "zh": "高質感金屬獎牌，適合運動會、比賽。",
+        "en": "High-quality metal medals for sports events."
+      },
+      "images": [
+        "/images/products/metal-medal/1.jpg"
+      ],
+      "priceRange": {
+        "zh": "每個 HK$8-20",
+        "en": "HK$8-20 per pc"
+      },
+      "minOrder": {
+        "zh": "50個起",
+        "en": "50 pcs min"
+      },
+      "specs": {
+        "zh": "尺寸: 40-80mm",
+        "en": "Size: 40-80mm"
+      }
+    },
+    {
+      "slug": "coloured-medal",
+      "name": {
+        "zh": "彩色獎牌",
+        "en": "Coloured Medal"
+      },
+      "category": "medals-coins",
+      "description": {
+        "zh": "彩色琺瑯工藝獎牌，色彩豐富。",
+        "en": "Coloured enamel medals with rich colors."
+      },
+      "images": [
+        "/images/products/coloured-medal/1.jpg"
+      ],
+      "priceRange": {
+        "zh": "每個 HK$8-18",
+        "en": "HK$8-18 per pc"
+      },
+      "minOrder": {
+        "zh": "50個起",
+        "en": "50 pcs min"
+      },
+      "specs": {
+        "zh": "尺寸: 40-80mm",
+        "en": "Size: 40-80mm"
+      }
+    },
+    {
+      "slug": "custom-challenge-coin",
+      "name": {
+        "zh": "挑戰硬幣",
+        "en": "Custom Challenge Coin"
+      },
+      "category": "medals-coins",
+      "description": {
+        "zh": "客製化挑戰硬幣，軍警風格，適合紀念活動。",
+        "en": "Custom challenge coins with military-style design."
+      },
+      "images": [
+        "/images/products/custom-challenge-coin/1.jpg"
+      ],
+      "priceRange": {
+        "zh": "每個 HK$10-25",
+        "en": "HK$10-25 per pc"
+      },
+      "minOrder": {
+        "zh": "50個起",
+        "en": "50 pcs min"
+      },
+      "specs": {
+        "zh": "尺寸: 40-80mm",
+        "en": "Size: 40-80mm"
+      }
+    },
+    {
+      "slug": "poly-lanyard",
+      "name": {
+        "zh": "滌綸頸繩",
+        "en": "Polyester Lanyards"
+      },
+      "category": "lanyards",
+      "description": {
+        "zh": "經濟實惠的滌綸頸繩。",
+        "en": "Affordable polyester lanyards."
+      },
+      "images": [
+        "/images/products/poly-lanyard/1.jpg"
+      ],
+      "priceRange": {
+        "zh": "每條 HK$2-5",
+        "en": "HK$2-5 per pc"
+      },
+      "minOrder": {
+        "zh": "100條起",
+        "en": "100 pcs min"
+      },
+      "specs": {
+        "zh": "尺寸: 15-25mm闊",
+        "en": "Width: 15-25mm"
+      }
+    },
+    {
+      "slug": "dye-sublimated-lanyard",
+      "name": {
+        "zh": "熱轉印頸繩",
+        "en": "Heat Transfer Lanyards"
+      },
+      "category": "lanyards",
+      "description": {
+        "zh": "全幅熱轉印頸繩，色彩鮮豔。",
+        "en": "Full-coverage heat transfer lanyards."
+      },
+      "images": [
+        "/images/products/dye-sublimated-lanyard/1.jpg"
+      ],
+      "priceRange": {
+        "zh": "每條 HK$3-7",
+        "en": "HK$3-7 per pc"
+      },
+      "minOrder": {
+        "zh": "100條起",
+        "en": "100 pcs min"
+      },
+      "specs": {
+        "zh": "尺寸: 15-25mm闊",
+        "en": "Width: 15-25mm"
+      }
+    },
+    {
+      "slug": "end-fold-woven-labels",
+      "name": {
+        "zh": "尾折織嘜",
+        "en": "End Fold Woven Labels"
+      },
+      "category": "custom-clothing-labels",
+      "description": {
+        "zh": "織邊折疊織嘜，適合服裝品牌標籤。",
+        "en": "End-fold woven labels for clothing brands."
+      },
+      "images": [
+        "/images/products/end-fold-woven-labels/1.jpg"
+      ],
+      "priceRange": {
+        "zh": "每千個 HK$200-500",
+        "en": "HK$200-500 per 1000 pcs"
+      },
+      "minOrder": {
+        "zh": "1000個起",
+        "en": "1000 pcs min"
+      },
+      "specs": {
+        "zh": "尺寸: 可定制",
+        "en": "Size: Custom"
+      }
+    },
+    {
+      "slug": "flat-cotton-labels",
+      "name": {
+        "zh": "平紋棉標",
+        "en": "Flat Cotton Labels"
+      },
+      "category": "custom-clothing-labels",
+      "description": {
+        "zh": "舒適棉質標籤，適合嬰兒服裝。",
+        "en": "Soft cotton labels for baby clothing."
+      },
+      "images": [
+        "/images/products/flat-cotton-labels/1.jpg"
+      ],
+      "priceRange": {
+        "zh": "每千個 HK$150-400",
+        "en": "HK$150-400 per 1000 pcs"
+      },
+      "minOrder": {
+        "zh": "1000個起",
+        "en": "1000 pcs min"
+      },
+      "specs": {
+        "zh": "尺寸: 可定制",
+        "en": "Size: Custom"
+      }
+    },
+    {
+      "slug": "custom-washi-tape",
+      "name": {
+        "zh": "和紙膠帶",
+        "en": "Custom Washi Tape"
+      },
+      "category": "others",
+      "description": {
+        "zh": "客製化和紙膠帶，可小批量訂製。",
+        "en": "Custom washi tape with small MOQ."
+      },
+      "images": [
+        "/images/products/custom-washi-tape/1.jpg"
+      ],
+      "priceRange": {
+        "zh": "每卷 HK$8-20",
+        "en": "HK$8-20 per roll"
+      },
+      "minOrder": {
+        "zh": "30卷起",
+        "en": "30 rolls min"
+      },
+      "specs": {
+        "zh": "寬度: 10-50mm",
+        "en": "Width: 10-50mm"
+      }
+    },
+    {
+      "slug": "laser-wooden-pins",
+      "name": {
+        "zh": "木章",
+        "en": "Laser Wooden Pins"
+      },
+      "category": "custom-pins",
+      "description": {
+        "zh": "木質徽章，雷射雕刻圖案，天然環保。",
+        "en": "Wooden pins with laser engraved designs."
+      },
+      "images": [
+        "/images/products/laser-wooden-pins/1.jpg"
+      ],
+      "priceRange": {
+        "zh": "每個 HK$3-8",
+        "en": "HK$3-8 per pc"
+      },
+      "minOrder": {
+        "zh": "50個起",
+        "en": "50 pcs min"
+      },
+      "specs": {
+        "zh": "尺寸: 25-60mm",
+        "en": "Size: 25-60mm"
+      }
+    },
+    {
+      "slug": "laser-wooden-plate",
+      "name": {
+        "zh": "木匙扣",
+        "en": "Wooden Keychains (Laser)"
+      },
+      "category": "custom-keychains",
+      "description": {
+        "zh": "木質匙扣，雷射雕刻圖案。",
+        "en": "Wooden keychains with laser engrave."
+      },
+      "images": [
+        "/images/products/laser-wooden-plate/1.jpg"
+      ],
+      "priceRange": {
+        "zh": "每個 HK$3-7",
+        "en": "HK$3-7 per pc"
+      },
+      "minOrder": {
+        "zh": "50個起",
+        "en": "50 pcs min"
+      },
+      "specs": {
+        "zh": "尺寸: 30-70mm",
+        "en": "Size: 30-70mm"
+      }
+    },
+    {
+      "slug": "custom-enamel-keychains",
+      "name": {
+        "zh": "琺瑯匙扣",
+        "en": "Enamel Keychains"
+      },
+      "category": "custom-keychains",
+      "description": {
+        "zh": "金屬琺瑯匙扣，工藝精細。",
+        "en": "Metal enamel keychains with premium feel."
+      },
+      "images": [
+        "/images/products/custom-enamel-keychains/1.jpg"
+      ],
+      "priceRange": {
+        "zh": "每個 HK$4-10",
+        "en": "HK$4-10 per pc"
+      },
+      "minOrder": {
+        "zh": "100個起",
+        "en": "100 pcs min"
+      },
+      "specs": {
+        "zh": "尺寸: 30-60mm",
+        "en": "Size: 30-60mm"
+      }
+    },
+    {
+      "slug": "embroidered-patches",
+      "name": {
+        "zh": "繡花章",
+        "en": "Embroidered Patches"
+      },
+      "category": "custom-pins",
+      "description": {
+        "zh": "精工繡花章，層次豐富，適合制服及服裝。",
+        "en": "Embroidered patches with layered texture."
+      },
+      "images": [
+        "/images/products/embroidered-patches/1.jpg"
+      ],
+      "priceRange": {
+        "zh": "每個 HK$5-15",
+        "en": "HK$5-15 per pc"
+      },
+      "minOrder": {
+        "zh": "50個起",
+        "en": "50 pcs min"
+      },
+      "specs": {
+        "zh": "尺寸: 可定制",
+        "en": "Size: Custom"
+      }
+    }
+  ]
+}
