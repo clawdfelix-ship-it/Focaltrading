@@ -26,11 +26,15 @@ export default function ProductCard({ product, lang, href }: ProductCardProps) {
   return (
     <Link href={href} className="group block">
       <div className="bg-white border border-[#e9ecef] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-200">
-        {/* Image placeholder */}
+        {/* Image */}
         <div className={`aspect-square bg-gradient-to-br ${gradient} flex items-center justify-center`}>
-          <span className="text-4xl opacity-40 group-hover:opacity-60 transition-opacity">
-            {name.charAt(0)}
-          </span>
+          {product.images && product.images[0] ? (
+            <img src={product.images[0]} alt={name} className="w-full h-full object-cover" />
+          ) : (
+            <span className="text-4xl opacity-40 group-hover:opacity-60 transition-opacity">
+              {name.charAt(0)}
+            </span>
+          )}
         </div>
         <div className="p-4">
           <span className="text-xs bg-[#f8f9fa] text-[#6c757d] px-2 py-0.5 rounded mb-2 inline-block">

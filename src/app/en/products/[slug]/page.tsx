@@ -53,9 +53,17 @@ export default async function EnProductPage({ params }: Props) {
           <div className="max-w-[1200px] mx-auto px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <div className="aspect-square bg-gradient-to-br from-[#e94560]/10 to-[#e94560]/5 rounded-xl flex items-center justify-center mb-4">
-                  <span className="text-8xl text-[#e94560]/30">{product.name.en.charAt(0)}</span>
-                </div>
+                {product.images && product.images[0] ? (
+                  <img
+                    src={product.images[0]}
+                    alt={product.name.en}
+                    className="aspect-square w-full object-cover rounded-xl mb-4"
+                  />
+                ) : (
+                  <div className="aspect-square bg-gradient-to-br from-[#e94560]/10 to-[#e94560]/5 rounded-xl flex items-center justify-center mb-4">
+                    <span className="text-8xl text-[#e94560]/30">{product.name.en.charAt(0)}</span>
+                  </div>
+                )}
               </div>
 
               <div>
