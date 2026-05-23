@@ -1,11 +1,17 @@
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 interface LanguageToggleProps {
   lang: 'zh' | 'en';
 }
 
 export default function LanguageToggle({ lang }: LanguageToggleProps) {
-  const otherPath = lang === 'en' ? '/zh/' : '/en/';
+  const pathname = usePathname();
+  const otherLang = lang === 'en' ? 'zh' : 'en';
+
+  // Replace /en/ prefix with /zh/ or vice versa
+  const otherPath = pathname.replace(/^\/(en|zh)/, `/${otherLang}`);
+
   const otherLabel = lang === 'en' ? '中文' : 'EN';
 
   return (
