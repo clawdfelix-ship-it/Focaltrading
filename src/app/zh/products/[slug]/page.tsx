@@ -42,7 +42,7 @@ export default async function ZhProductPage({ params }: Props) {
             <nav className="text-sm text-[#6c757d]">
               <Link href="/zh/" className="hover:text-[#e94560]">主頁</Link>
               <span className="mx-2">/</span>
-              <Link href={`/category/${product.category}`} className="hover:text-[#e94560]">{product.category}</Link>
+              <Link href={`/zh/category/${product.category}`} className="hover:text-[#e94560]">{product.category}</Link>
               <span className="mx-2">/</span>
               <span className="text-[#333333]">{product.name.zh}</span>
             </nav>
@@ -106,7 +106,7 @@ export default async function ZhProductPage({ params }: Props) {
               <h2 className="section-title">相關產品</h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                 {related.map(p => (
-                  <ProductCard key={p.slug} product={p} lang="zh" href={`/products/${p.slug}`} />
+                  <ProductCard key={p.slug} product={p} lang="zh" href={`/zh/products/${p.slug}`} />
                 ))}
               </div>
             </div>
