@@ -93,7 +93,7 @@ export default function ZhHomePage() {
           <div className="max-w-[1200px] mx-auto px-4 md:px-6">
             <div className="flex items-end justify-between mb-8">
               <h2 className="section-title mb-0">熱門產品</h2>
-              <Link href="/category/custom-pins" className="text-[#e94560] text-sm font-medium hover:underline">
+              <Link href="/category/all" className="text-[#e94560] text-sm font-medium hover:underline">
                 查看全部 →
               </Link>
             </div>

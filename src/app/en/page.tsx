@@ -93,7 +93,7 @@ export default function EnHomePage() {
           <div className="max-w-[1200px] mx-auto px-4 md:px-6">
             <div className="flex items-end justify-between mb-8">
               <h2 className="section-title mb-0">Popular Products</h2>
-              <Link href="/en/category/custom-pins" className="text-[#e94560] text-sm font-medium hover:underline">
+              <Link href="/en/category/all" className="text-[#e94560] text-sm font-medium hover:underline">
                 View All →
               </Link>
             </div>
