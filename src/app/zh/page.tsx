@@ -51,11 +51,11 @@ export default function ZhHomePage() {
                   讓您的生活更輕鬆，簡單下單流程。不論數量多寡，我們都能靈活配合！
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <Link href="/category/all" className="btn-primary">
+                  <Link href="/zh/category/all" className="btn-primary">
                     立即開始
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                   </Link>
-                  <Link href="/contact" className="btn-secondary">
+                  <Link href="/zh/contact" className="btn-secondary">
                     獲取報價
                   </Link>
                 </div>
@@ -93,7 +93,7 @@ export default function ZhHomePage() {
           <div className="max-w-[1200px] mx-auto px-4 md:px-6">
             <div className="flex items-end justify-between mb-8">
               <h2 className="section-title mb-0">熱門產品</h2>
-              <Link href="/category/all" className="text-[#e94560] text-sm font-medium hover:underline">
+              <Link href="/zh/category/all" className="text-[#e94560] text-sm font-medium hover:underline">
                 查看全部 →
               </Link>
             </div>
@@ -180,7 +180,7 @@ export default function ZhHomePage() {
             <p className="text-gray-400 mb-8 max-w-md mx-auto">
               立即聯絡我們獲取免費報價。我們會在24小時內回覆您。
             </p>
-            <Link href="/contact" className="btn-primary text-base px-8 py-4">
+            <Link href="/zh/contact" className="btn-primary text-base px-8 py-4">
               立即獲取免費報價
             </Link>
           </div>

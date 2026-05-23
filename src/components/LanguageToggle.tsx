@@ -5,10 +5,7 @@ interface LanguageToggleProps {
 }
 
 export default function LanguageToggle({ lang }: LanguageToggleProps) {
-  // Chinese site root is /, English is /en/
-  const otherLang = lang === 'en' ? 'zh' : 'en';
-  const otherPath = lang === 'en' ? '/' : '/en/';
-  const currentLabel = lang === 'en' ? 'EN' : '中文';
+  const otherPath = lang === 'en' ? '/zh/' : '/en/';
   const otherLabel = lang === 'en' ? '中文' : 'EN';
 
   return (

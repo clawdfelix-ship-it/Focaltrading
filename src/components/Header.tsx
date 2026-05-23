@@ -10,15 +10,15 @@ export default function Header({ lang }: { lang: 'zh' | 'en' }) {
 
   const navLinks = {
     zh: [
-      { href: '/', label: '主頁' },
-      { href: '/category/custom-pins', label: '產品' },
-      { href: '/about-us', label: '關於我們' },
-      { href: '/contact', label: '聯絡我們' },
-      { href: '/faq', label: '常見問題' },
+      { href: '/zh/', label: '主頁' },
+      { href: '/zh/category/all', label: '產品' },
+      { href: '/zh/about-us', label: '關於我們' },
+      { href: '/zh/contact', label: '聯絡我們' },
+      { href: '/zh/faq', label: '常見問題' },
     ],
     en: [
       { href: '/en/', label: 'Home' },
-      { href: '/en/category/custom-pins', label: 'Products' },
+      { href: '/en/category/all', label: 'Products' },
       { href: '/en/about-us', label: 'Our Story' },
       { href: '/en/contact', label: 'Contact' },
       { href: '/en/faq', label: 'FAQ' },
@@ -31,7 +31,7 @@ export default function Header({ lang }: { lang: 'zh' | 'en' }) {
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="max-w-[1200px] mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-16">
-          <Link href={lang === 'en' ? '/en/' : '/'} className="flex items-center gap-2">
+          <Link href={lang === 'en' ? '/en/' : '/zh/'} className="flex items-center gap-2">
             <div className="text-[#1a1a2e] font-bold text-xl" style={{fontFamily: 'Noto Sans HK, sans-serif'}}>
               Focal Trading
             </div>

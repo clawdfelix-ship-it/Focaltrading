@@ -72,7 +72,7 @@ export default function ZhReviewsPage() {
             </div>
             <div className="text-center mt-12">
               <p className="text-[#6c757d] mb-4">想分享您的經驗？</p>
-              <Link href="/contact" className="btn-secondary">撰寫評價</Link>
+              <Link href="/zh/contact" className="btn-secondary">撰寫評價</Link>
             </div>
           </div>
         </section>

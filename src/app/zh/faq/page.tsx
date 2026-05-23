@@ -85,7 +85,7 @@ export default function ZhFAQPage() {
             </div>
             <div className="mt-8 text-center bg-[#f8f9fa] rounded-lg p-6">
               <p className="text-[#6c757d] mb-4">還有其他問題？</p>
-              <Link href="/contact" className="btn-primary">聯絡我們</Link>
+              <Link href="/zh/contact" className="btn-primary">聯絡我們</Link>
             </div>
           </div>
         </section>
