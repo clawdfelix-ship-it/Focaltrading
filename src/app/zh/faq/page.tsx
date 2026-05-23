@@ -6,6 +6,27 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: '常見問題 - Focal Trading Company',
   description: '關於訂製襟章、匙扣、獎牌等的常見問題。',
+  alternates: {
+    canonical: 'https://focal-trading.com/zh/faq',
+    languages: {
+      'en': 'https://focal-trading.com/en/faq',
+      'zh-HK': 'https://focal-trading.com/zh/faq',
+    },
+  },
+  openGraph: {
+    title: '常見問題 - Focal Trading Company',
+    description: '關於訂製襟章、匙扣、獎牌等的常見問題。',
+    url: 'https://focal-trading.com/zh/faq',
+    siteName: 'Focal Trading Company',
+    type: 'website',
+    images: [{ url: '/og-default.jpg', width: 1200, height: 630, alt: 'Focal Trading Company' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '常見問題 - Focal Trading Company',
+    description: '關於訂製襟章、匙扣、獎牌等的常見問題。',
+    images: ['/og-default.jpg'],
+  },
 };
 
 export default function ZhFAQPage() {

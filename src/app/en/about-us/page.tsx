@@ -6,6 +6,27 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'Our Story - Focal Trading Company',
   description: 'Learn about Focal Trading Company - our history, mission and commitment to quality custom merchandise.',
+  alternates: {
+    canonical: 'https://focal-trading.com/en/about-us',
+    languages: {
+      'en': 'https://focal-trading.com/en/about-us',
+      'zh-HK': 'https://focal-trading.com/zh/about-us',
+    },
+  },
+  openGraph: {
+    title: 'Our Story - Focal Trading Company',
+    description: 'Learn about Focal Trading Company - our history, mission and commitment to quality custom merchandise.',
+    url: 'https://focal-trading.com/en/about-us',
+    siteName: 'Focal Trading Company',
+    type: 'website',
+    images: [{ url: '/og-default.jpg', width: 1200, height: 630, alt: 'Focal Trading Company' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Our Story - Focal Trading Company',
+    description: 'Learn about Focal Trading Company - our history, mission and commitment to quality custom merchandise.',
+    images: ['/og-default.jpg'],
+  },
 };
 
 export default function EnAboutPage() {

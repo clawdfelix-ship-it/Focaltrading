@@ -8,6 +8,27 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Focal Trading Company - 專業訂製襟章、匙扣、獎牌',
   description: '專業訂製各類金屬紀念品，包括襟章、匙扣、獎牌、頸繩等。靈活小批量訂製，最快10分鐘搞掂。',
+  alternates: {
+    canonical: 'https://focal-trading.com/zh',
+    languages: {
+      'en': 'https://focal-trading.com/en',
+      'zh-HK': 'https://focal-trading.com/zh',
+    },
+  },
+  openGraph: {
+    title: 'Focal Trading Company - 專業訂製襟章、匙扣、獎牌',
+    description: '專業訂製各類金屬紀念品，包括襟章、匙扣、獎牌、頸繩等。靈活小批量訂製，最快10分鐘搞掂。',
+    url: 'https://focal-trading.com/zh',
+    siteName: 'Focal Trading Company',
+    type: 'website',
+    images: [{ url: '/og-default.jpg', width: 1200, height: 630, alt: 'Focal Trading Company' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Focal Trading Company - 專業訂製襟章、匙扣、獎牌',
+    description: '專業訂製各類金屬紀念品，包括襟章、匙扣、獎牌、頸繩等。靈活小批量訂製，最快10分鐘搞掂。',
+    images: ['/og-default.jpg'],
+  },
 };
 
 export default function ZhHomePage() {

@@ -6,6 +6,27 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'FAQ - Focal Trading Company',
   description: 'Frequently asked questions about ordering custom pins, keychains, medals and more.',
+  alternates: {
+    canonical: 'https://focal-trading.com/en/faq',
+    languages: {
+      'en': 'https://focal-trading.com/en/faq',
+      'zh-HK': 'https://focal-trading.com/zh/faq',
+    },
+  },
+  openGraph: {
+    title: 'FAQ - Focal Trading Company',
+    description: 'Frequently asked questions about ordering custom pins, keychains, medals and more.',
+    url: 'https://focal-trading.com/en/faq',
+    siteName: 'Focal Trading Company',
+    type: 'website',
+    images: [{ url: '/og-default.jpg', width: 1200, height: 630, alt: 'Focal Trading Company' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'FAQ - Focal Trading Company',
+    description: 'Frequently asked questions about ordering custom pins, keychains, medals and more.',
+    images: ['/og-default.jpg'],
+  },
 };
 
 export default function EnFAQPage() {

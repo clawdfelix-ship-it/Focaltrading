@@ -8,6 +8,27 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Focal Trading Company - Custom Pins, Keychains, Medals & More',
   description: 'Professional custom merchandise including enamel pins, keychains, medals, lanyards, clothing labels and more. Flexible MOQ, fast turnaround.',
+  alternates: {
+    canonical: 'https://focal-trading.com/en',
+    languages: {
+      'en': 'https://focal-trading.com/en',
+      'zh-HK': 'https://focal-trading.com/zh',
+    },
+  },
+  openGraph: {
+    title: 'Focal Trading Company - Custom Pins, Keychains, Medals & More',
+    description: 'Professional custom merchandise including enamel pins, keychains, medals, lanyards, clothing labels and more. Flexible MOQ, fast turnaround.',
+    url: 'https://focal-trading.com/en',
+    siteName: 'Focal Trading Company',
+    type: 'website',
+    images: [{ url: '/og-default.jpg', width: 1200, height: 630, alt: 'Focal Trading Company' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Focal Trading Company - Custom Pins, Keychains, Medals & More',
+    description: 'Professional custom merchandise including enamel pins, keychains, medals, lanyards, clothing labels and more. Flexible MOQ, fast turnaround.',
+    images: ['/og-default.jpg'],
+  },
 };
 
 export default function EnHomePage() {

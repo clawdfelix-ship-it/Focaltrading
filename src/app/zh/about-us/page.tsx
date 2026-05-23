@@ -6,6 +6,27 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: '關於我們 - Focal Trading Company',
   description: '了解 Focal Trading Company 的歷史、使命和對品質的承諾。',
+  alternates: {
+    canonical: 'https://focal-trading.com/zh/about-us',
+    languages: {
+      'en': 'https://focal-trading.com/en/about-us',
+      'zh-HK': 'https://focal-trading.com/zh/about-us',
+    },
+  },
+  openGraph: {
+    title: '關於我們 - Focal Trading Company',
+    description: '了解 Focal Trading Company 的歷史、使命和對品質的承諾。',
+    url: 'https://focal-trading.com/zh/about-us',
+    siteName: 'Focal Trading Company',
+    type: 'website',
+    images: [{ url: '/og-default.jpg', width: 1200, height: 630, alt: 'Focal Trading Company' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '關於我們 - Focal Trading Company',
+    description: '了解 Focal Trading Company 的歷史、使命和對品質的承諾。',
+    images: ['/og-default.jpg'],
+  },
 };
 
 export default function ZhAboutPage() {

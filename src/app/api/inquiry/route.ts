@@ -54,7 +54,7 @@ export async function POST(request: Request) {
               <tr><td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Message</td><td style="padding: 8px; border: 1px solid #ddd;">${message}</td></tr>
             </table>
           `,
-          reply_to: email,
+          replyTo: email as string,
         });
       } catch (emailError) {
         console.error('Resend email error:', emailError);

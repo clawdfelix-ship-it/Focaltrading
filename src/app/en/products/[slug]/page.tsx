@@ -22,6 +22,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${product.name.en} - Focal Trading Company`,
     description: product.description.en,
+    alternates: {
+      canonical: `https://focal-trading.com/en/products/${slug}`,
+      languages: {
+        'en': `https://focal-trading.com/en/products/${slug}`,
+        'zh-HK': `https://focal-trading.com/zh/products/${slug}`,
+      },
+    },
+    openGraph: {
+      title: `${product.name.en} - Focal Trading Company`,
+      description: product.description.en,
+      url: `https://focal-trading.com/en/products/${slug}`,
+      siteName: 'Focal Trading Company',
+      type: 'website',
+      images: product.images && product.images[0] ? [{ url: product.images[0], width: 800, height: 800, alt: product.name.en }] : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${product.name.en} - Focal Trading Company`,
+      description: product.description.en,
+      images: product.images && product.images[0] ? [product.images[0]] : [],
+    },
   };
 }
 
@@ -35,6 +56,24 @@ export default async function EnProductPage({ params }: Props) {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Product',
+            name: product.name.en,
+            description: product.description.en,
+            image: product.images || [],
+            offers: {
+              '@type': 'Offer',
+              price: product.priceRange.en,
+              availability: 'https://schema.org/InStock',
+              url: `https://focal-trading.com/en/products/${slug}`,
+            },
+          }),
+        }}
+      />
       <Header lang="en" />
       <main>
         <div className="bg-[#f8f9fa] py-3 border-b border-[#e9ecef]">
