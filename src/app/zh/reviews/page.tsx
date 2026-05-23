@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     url: 'https://focal-trading.com/zh/reviews',
     siteName: 'Focal Trading Company',
     type: 'website',
-    images: [{ url: '/og-default.jpg', width: 1200, height: 630, alt: 'Focal Trading Company' }],
+    images: [{ url: '/og-default.svg', width: 1200, height: 630, alt: 'Focal Trading Company' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: '客戶評價 - Focal Trading Company',
     description: '看看客戶對 Focal Trading Company 客製化商品的評價。',
-    images: ['/og-default.jpg'],
+    images: ['/og-default.svg'],
   },
 };
 

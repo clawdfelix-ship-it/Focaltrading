@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     url: 'https://focal-trading.com/en/faq',
     siteName: 'Focal Trading Company',
     type: 'website',
-    images: [{ url: '/og-default.jpg', width: 1200, height: 630, alt: 'Focal Trading Company' }],
+    images: [{ url: '/og-default.svg', width: 1200, height: 630, alt: 'Focal Trading Company' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'FAQ - Focal Trading Company',
     description: 'Frequently asked questions about ordering custom pins, keychains, medals and more.',
-    images: ['/og-default.jpg'],
+    images: ['/og-default.svg'],
   },
 };
 
@@ -39,8 +39,23 @@ export default function EnFAQPage() {
     { q: 'What payment methods do you accept?', a: 'We accept bank transfer, PayPal, and credit card payments. Payment terms are negotiable for large orders.' },
   ];
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.q,
+      acceptedAnswer: { '@type': 'Answer', text: faq.a },
+    })),
+  };
+
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Header lang="en" />
       <main>
         <div className="bg-[#f8f9fa] py-8 border-b border-[#e9ecef]">

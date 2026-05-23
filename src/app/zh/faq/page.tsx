@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     url: 'https://focal-trading.com/zh/faq',
     siteName: 'Focal Trading Company',
     type: 'website',
-    images: [{ url: '/og-default.jpg', width: 1200, height: 630, alt: 'Focal Trading Company' }],
+    images: [{ url: '/og-default.svg', width: 1200, height: 630, alt: 'Focal Trading Company' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: '常見問題 - Focal Trading Company',
     description: '關於訂製襟章、匙扣、獎牌等的常見問題。',
-    images: ['/og-default.jpg'],
+    images: ['/og-default.svg'],
   },
 };
 
@@ -39,8 +39,22 @@ export default function ZhFAQPage() {
     { q: '接受什麼付款方式？', a: '我們接受銀行轉帳、PayPal 及信用卡付款。大批量訂單可另行商量付款條款。' },
   ];
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.q,
+      acceptedAnswer: { '@type': 'Answer', text: faq.a },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Header lang="zh" />
       <main>
         <div className="bg-[#f8f9fa] py-8 border-b border-[#e9ecef]">

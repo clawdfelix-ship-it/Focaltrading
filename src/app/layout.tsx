@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-default.jpg',
+        url: '/og-default.svg',
         width: 1200,
         height: 630,
         alt: 'Focal Trading Company',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Focal Trading Company - Custom Pins, Keychains, Medals & More',
     description: 'Professional custom merchandise including enamel pins, keychains, medals, lanyards, clothing labels and more. Flexible MOQ, fast turnaround.',
-    images: ['/og-default.jpg'],
+    images: ['/og-default.svg'],
   },
 };
 

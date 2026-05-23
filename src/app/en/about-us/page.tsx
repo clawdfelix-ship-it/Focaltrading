@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     url: 'https://focal-trading.com/en/about-us',
     siteName: 'Focal Trading Company',
     type: 'website',
-    images: [{ url: '/og-default.jpg', width: 1200, height: 630, alt: 'Focal Trading Company' }],
+    images: [{ url: '/og-default.svg', width: 1200, height: 630, alt: 'Focal Trading Company' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Our Story - Focal Trading Company',
     description: 'Learn about Focal Trading Company - our history, mission and commitment to quality custom merchandise.',
-    images: ['/og-default.jpg'],
+    images: ['/og-default.svg'],
   },
 };
 

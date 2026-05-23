@@ -8,9 +8,10 @@ const PRODUCTS_PER_PAGE = 12;
 
 interface AllProductsClientProps {
   products: Product[];
+  lang?: 'en' | 'zh';
 }
 
-export default function AllProductsClient({ products }: AllProductsClientProps) {
+export default function AllProductsClient({ products, lang = 'en' }: AllProductsClientProps) {
   const [search, setSearch] = useState('');
   const [page, setPage] = useState(1);
 
@@ -29,6 +30,14 @@ export default function AllProductsClient({ products }: AllProductsClientProps) 
     setPage(1);
   }
 
+  const productLabel = lang === 'zh' ? '產品' : 'product';
+  const foundLabel = lang === 'zh' ? '找到' : 'found';
+  const noResultLabel = lang === 'zh' ? '沒有符合您搜尋的產品。' : 'No products match your search.';
+  const clearLabel = lang === 'zh' ? '清除搜尋' : 'Clear search';
+  const prevLabel = lang === 'zh' ? '上一頁' : 'Previous';
+  const nextLabel = lang === 'zh' ? '下一頁' : 'Next';
+  const pageLabel = lang === 'zh' ? '頁' : 'Page';
+
   return (
     <section className="py-12">
       <div className="max-w-[1200px] mx-auto px-4 md:px-6">
@@ -37,7 +46,7 @@ export default function AllProductsClient({ products }: AllProductsClientProps) 
           <div className="relative max-w-md">
             <input
               type="text"
-              placeholder="Search products..."
+              placeholder={lang === 'zh' ? '搜尋產品...' : 'Search products...'}
               value={search}
               onChange={handleSearch}
               className="input-field pl-10"
@@ -47,7 +56,7 @@ export default function AllProductsClient({ products }: AllProductsClientProps) 
             </svg>
           </div>
           <p className="text-sm text-[#6c757d] mt-2">
-            {filtered.length} {filtered.length === 1 ? 'product' : 'products'} found
+            {filtered.length} {foundLabel} {filtered.length === 1 ? productLabel : productLabel}
           </p>
         </div>
 
@@ -59,8 +68,8 @@ export default function AllProductsClient({ products }: AllProductsClientProps) 
                 <ProductCard
                   key={p.slug}
                   product={p}
-                  lang="en"
-                  href={`/en/products/${p.slug}`}
+                  lang={lang}
+                  href={`/${lang}/products/${p.slug}`}
                 />
               ))}
             </div>
@@ -73,29 +82,29 @@ export default function AllProductsClient({ products }: AllProductsClientProps) 
                   disabled={page === 1}
                   className="px-4 py-2 border border-[#e9ecef] rounded-lg text-sm hover:bg-[#f8f9fa] disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Previous
+                  {prevLabel}
                 </button>
                 <span className="px-4 py-2 text-sm text-[#6c757d]">
-                  Page {page} of {totalPages}
+                  {pageLabel} {page} / {totalPages}
                 </span>
                 <button
                   onClick={() => setPage(p => Math.min(totalPages, p + 1))}
                   disabled={page === totalPages}
                   className="px-4 py-2 border border-[#e9ecef] rounded-lg text-sm hover:bg-[#f8f9fa] disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Next
+                  {nextLabel}
                 </button>
               </div>
             )}
           </>
         ) : (
           <div className="text-center py-16">
-            <p className="text-[#6c757d]">No products match your search.</p>
+            <p className="text-[#6c757d]">{noResultLabel}</p>
             <button
               onClick={() => { setSearch(''); setPage(1); }}
               className="mt-4 text-[#e94560] hover:underline text-sm"
             >
-              Clear search
+              {clearLabel}
             </button>
           </div>
         )}

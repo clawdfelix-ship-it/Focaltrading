@@ -34,13 +34,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://focal-trading.com/en/category/${slug}`,
       siteName: 'Focal Trading Company',
       type: 'website',
-      images: [{ url: '/og-default.jpg', width: 1200, height: 630, alt: cat.name.en }],
+      images: [{ url: '/og-default.svg', width: 1200, height: 630, alt: cat.name.en }],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${cat.name.en} - Focal Trading Company`,
       description: cat.description.en,
-      images: ['/og-default.jpg'],
+      images: ['/og-default.svg'],
     },
   };
 }
