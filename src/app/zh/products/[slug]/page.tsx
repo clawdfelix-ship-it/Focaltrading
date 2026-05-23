@@ -40,7 +40,7 @@ export default async function ZhProductPage({ params }: Props) {
         <div className="bg-[#f8f9fa] py-3 border-b border-[#e9ecef]">
           <div className="max-w-[1200px] mx-auto px-4 md:px-6">
             <nav className="text-sm text-[#6c757d]">
-              <Link href="/" className="hover:text-[#e94560]">主頁</Link>
+              <Link href="/zh/" className="hover:text-[#e94560]">主頁</Link>
               <span className="mx-2">/</span>
               <Link href={`/category/${product.category}`} className="hover:text-[#e94560]">{product.category}</Link>
               <span className="mx-2">/</span>

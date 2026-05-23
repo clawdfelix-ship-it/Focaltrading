@@ -6,10 +6,10 @@ export default function Footer({ lang }: { lang: 'zh' | 'en' }) {
 
   const footerLinks = {
     quickLinks: isZh
-      ? [{ href: '/', label: '主頁' }, { href: '/about-us', label: '關於我們' }, { href: '/contact', label: '聯絡我們' }, { href: '/faq', label: '常見問題' }]
+      ? [{ href: '/zh/', label: '主頁' }, { href: '/zh/about-us', label: '關於我們' }, { href: '/zh/contact', label: '聯絡我們' }, { href: '/zh/faq', label: '常見問題' }]
       : [{ href: '/en/', label: 'Home' }, { href: '/en/about-us', label: 'Our Story' }, { href: '/en/contact', label: 'Contact' }, { href: '/en/faq', label: 'FAQ' }],
     categories: isZh
-      ? [{ href: '/category/custom-pins', label: '襟章' }, { href: '/category/custom-keychains', label: '匙扣' }, { href: '/category/medals-coins', label: '獎牌' }, { href: '/category/lanyards', label: '頸繩' }]
+      ? [{ href: '/zh/category/custom-pins', label: '襟章' }, { href: '/zh/category/custom-keychains', label: '匙扣' }, { href: '/zh/category/medals-coins', label: '獎牌' }, { href: '/zh/category/lanyards', label: '頸繩' }]
       : [{ href: '/en/category/custom-pins', label: 'Pins' }, { href: '/en/category/custom-keychains', label: 'Keychains' }, { href: '/en/category/medals-coins', label: 'Medals' }, { href: '/en/category/lanyards', label: 'Lanyards' }],
   };
 
