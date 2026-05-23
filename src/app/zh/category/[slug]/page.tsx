@@ -21,6 +21,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${cat.name.zh} - Focal Trading Company`,
     description: cat.description.zh,
+    alternates: {
+      canonical: `https://focal-trading.com/zh/category/${slug}`,
+      languages: {
+        'en': `https://focal-trading.com/en/category/${slug}`,
+        'zh-HK': `https://focal-trading.com/zh/category/${slug}`,
+      },
+    },
+    openGraph: {
+      title: `${cat.name.zh} - Focal Trading Company`,
+      description: cat.description.zh,
+      url: `https://focal-trading.com/zh/category/${slug}`,
+      siteName: 'Focal Trading Company',
+      type: 'website',
+      images: [{ url: '/og-default.svg', width: 1200, height: 630, alt: cat.name.zh }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${cat.name.zh} - Focal Trading Company`,
+      description: cat.description.zh,
+      images: ['/og-default.svg'],
+    },
   };
 }
 
@@ -29,14 +50,27 @@ export default async function ZhCategoryPage({ params }: Props) {
   const cat = getCategoryBySlug(slug);
   const products = getProducts().filter(p => p.category === slug);
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '主頁', item: 'https://focal-trading.com/zh/' },
+      { '@type': 'ListItem', position: 2, name: cat?.name.zh || slug, item: `https://focal-trading.com/zh/category/${slug}` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Header lang="zh" />
       <main>
         <div className="bg-[#f8f9fa] py-3 border-b border-[#e9ecef]">
           <div className="max-w-[1200px] mx-auto px-4 md:px-6">
             <nav className="text-sm text-[#6c757d]">
-              <Link href="/" className="hover:text-[#e94560]">主頁</Link>
+              <Link href="/zh/" className="hover:text-[#e94560]">主頁</Link>
               <span className="mx-2">/</span>
               <span className="text-[#333333]">{cat?.name.zh || slug}</span>
             </nav>
@@ -55,7 +89,7 @@ export default async function ZhCategoryPage({ params }: Props) {
             ) : (
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
                 {products.map(p => (
-                  <ProductCard key={p.slug} product={p} lang="zh" href={`/products/${p.slug}`} />
+                  <ProductCard key={p.slug} product={p} lang="zh" href={`/zh/products/${p.slug}`} />
                 ))}
               </div>
             )}

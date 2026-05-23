@@ -50,8 +50,21 @@ export default async function EnCategoryPage({ params }: Props) {
   const cat = getCategoryBySlug(slug);
   const products = getProducts().filter(p => p.category === slug);
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://focal-trading.com/en/' },
+      { '@type': 'ListItem', position: 2, name: cat?.name.en || slug, item: `https://focal-trading.com/en/category/${slug}` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Header lang="en" />
       <main>
         <div className="bg-[#f8f9fa] py-3 border-b border-[#e9ecef]">

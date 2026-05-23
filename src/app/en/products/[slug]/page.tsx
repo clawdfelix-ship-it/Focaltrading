@@ -53,25 +53,44 @@ export default async function EnProductPage({ params }: Props) {
   if (!product) return <div>Product not found</div>;
 
   const related = products.filter(p => p.slug !== slug && p.category === product.category).slice(0, 4);
+  const cat = product.category;
+
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.name.en,
+    description: product.description.en,
+    image: product.images || [],
+    offers: {
+      '@type': 'Offer',
+      price: product.priceRange.en,
+      availability: 'https://schema.org/InStock',
+      url: `https://focal-trading.com/en/products/${slug}`,
+    },
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://focal-trading.com/en/' },
+      { '@type': 'ListItem', position: 2, name: cat.replace('-', ' '), item: `https://focal-trading.com/en/category/${cat}` },
+      { '@type': 'ListItem', position: 3, name: product.name.en, item: `https://focal-trading.com/en/products/${slug}` },
+    ],
+  };
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Product',
-            name: product.name.en,
-            description: product.description.en,
-            image: product.images || [],
-            offers: {
-              '@type': 'Offer',
-              price: product.priceRange.en,
-              availability: 'https://schema.org/InStock',
-              url: `https://focal-trading.com/en/products/${slug}`,
-            },
-          }),
+          __html: JSON.stringify(productSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
         }}
       />
       <Header lang="en" />
