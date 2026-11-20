@@ -200,7 +200,7 @@ export default function EnHomePage() {
               ].map((r, i) => (
                 <div key={i} className="bg-white border border-[#e9ecef] rounded-lg p-6">
                   <div className="text-[#e94560] text-sm mb-3">{'★'.repeat(r.rating)}</div>
-                  <p className="text-sm text-[#333333] mb-4 line-clamp-4">"{r.text}"</p>
+                  <p className="text-sm text-[#333333] mb-4 line-clamp-4">&quot;{r.text}&quot;</p>
                   <p className="text-[#6c757d] text-xs font-medium">— {r.author}</p>
                   <p className="text-[#6c757d] text-xs">{r.date}</p>
                 </div>

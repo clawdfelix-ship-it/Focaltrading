@@ -1,8 +1,9 @@
 import type { Product, Category } from './types';
+import productsJson from '@/content/products.json';
+import categoriesJson from '@/content/categories.json';
 
 export function getProducts(): Product[] {
-  const data = require('@/content/products.json');
-  return data.products;
+  return productsJson.products;
 }
 
 export function getProductBySlug(slug: string): Product | undefined {
@@ -16,8 +17,7 @@ export function getProductsByCategory(category: string): Product[] {
 }
 
 export function getCategories(): Category[] {
-  const data = require('@/content/categories.json');
-  return data.categories;
+  return categoriesJson.categories;
 }
 
 export function getCategoryBySlug(slug: string): Category | undefined {
